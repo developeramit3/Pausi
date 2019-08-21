@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.co.abtradingorganisation.abfinal.ClubProfile1">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/property_detail_back_lay"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/property_detail_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back2" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/properyty_name_tittle"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/property_detail_back_lay"
+                    android:text="@string/dummy_name"
+                    android:textColor="@color/colorbtn" />
+
+                <ImageView
+                    android:id="@+id/prop_detail_camera_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/upload" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <com.t.pausi.Bean.ViewPagerCustomDuration
+        android:id="@+id/vp_viewpager2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorBlack"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/slide_up_for_more_details"
+            android:textSize="4pt" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/slide_up" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="371dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="452dp" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/cons"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/detail_property_type_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/est_mortgage_123"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="6pt" />
+
+                                <TextView
+                                    android:id="@+id/detail_price_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/_113"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="7pt"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/detail_sale_type_text"
+                                    style="@style/Base.TextAppearance.AppCompat.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="22dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/colorAccent"
+                                    android:text="@string/for_sale"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="5pt" />
+
+                                <TextView
+                                    android:id="@+id/detail_address_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/indore_madhya_pradesh"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="6pt" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/colorWhite">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:background="#a9adb1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/total_photos_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/_3"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="6pt" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:text="@string/photos"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="5pt" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#c7c9cc"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/detail_beds_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="@string/_5"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="@string/beds"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/detail_baths_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="2"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="@string/baths"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/detail_sqft_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="100"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="@string/sq_ft_m2"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/detail_year_built_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical"
+                                        android:text="5"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="@string/year_built"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/descriptions"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="8pt"
+                                android:textStyle="bold" />
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:layout_marginTop="10dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="15dp"
+                                        android:text="Price History"
+                                        android:textColor="@color/colorBlack"
+                                       style="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_centerVertical="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Date"
+                                        style="@style/TextAppearance.AppCompat.Small"/>
+                                    <TextView
+                                        android:layout_centerInParent="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Event"
+                                        style="@style/TextAppearance.AppCompat.Small"/>
+                                    <TextView
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Price"
+                                        style="@style/TextAppearance.AppCompat.Small"/>
+
+                                </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="#cacdcf"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="10dp">
+
+                                        <TextView
+                                            android:id="@+id/price_history_date_text"
+                                            android:layout_centerVertical="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="2019-02-19"
+                                            android:textColor="@color/colorBlack"
+                                            style="@style/TextAppearance.AppCompat.Small"/>
+                                        <TextView
+                                            android:id="@+id/price_history_sale_text"
+                                            android:layout_centerInParent="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="SALE"
+                                            android:textColor="@color/colorBlack"
+                                            style="@style/TextAppearance.AppCompat.Small"/>
+                                        <TextView
+                                            android:id="@+id/price_history_price_text"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="16446178 XAF"
+                                            android:textColor="@color/colorBlack"
+                                            style="@style/TextAppearance.AppCompat.Small"/>
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:layout_marginTop="10dp"
+                                app:cardUseCompatPadding="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+
+                                        android:id="@+id/detail_descrp_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:text="@string/this_is_a_dummy_data"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ask_the_listing_agent"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt"
+                                        android:textStyle="bold" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/detail_agent_image"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="15dp"
+                                        android:src="@drawable/user" />
+
+                                    <TextView
+                                        android:id="@+id/detail_agent_name_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/dummy_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="6pt" />
+
+                                    <TextView
+                                        android:id="@+id/detail_agent_broker_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/broker"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="5pt" />
+
+                                    <Button
+                                        style="@style/Base.TextAppearance.AppCompat.Small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:background="#2f7147"
+                                        android:text="@string/listing_agent"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="5pt" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="#b0b3b6" />
+
+                                    <TextView
+                                        android:id="@+id/detail_app_about_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/this_is_a_dummy_data"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="5pt" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="#b0b3b6" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/phone_number_optional"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="5pt" />
+
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/phone_number"
+                                        android:inputType="number"
+                                        android:paddingBottom="15dp"
+                                        android:textSize="5pt" />
+
+                                    <Button
+                                        android:id="@+id/ask_question_btn"
+                                        style="@style/Base.TextAppearance.AppCompat.Small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@color/colorAccent"
+                                        android:text="@string/ask_question"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="5pt" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="5dp"
+                                app:cardUseCompatPadding="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <RelativeLayout
+                                        android:id="@+id/notify_for_latest_update_lay"
+                                        android:layout_width="300dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/buttonss">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:src="@drawable/noti" />
+
+                                        <TextView
+                                            android:id="@+id/notify_textviews"
+                                            style="@style/TextAppearance.AppCompat.Small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_margin="15dp"
+                                            android:text="@string/notify_me_for_latest_updates"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="7pt" />
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/similar_listings"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="8pt"
+                                android:textStyle="bold" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/detail_similar_listing_recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

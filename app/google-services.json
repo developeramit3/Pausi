@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "161107915860",
+    "firebase_url": "https://pausi-54aa2.firebaseio.com",
+    "project_id": "pausi-54aa2",
+    "storage_bucket": "pausi-54aa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161107915860:android:3a14899d4904227c",
+        "android_client_info": {
+          "package_name": "com.t.pausi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161107915860-ch95jnth28otmvco1ebpjpj5b2kutvkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.t.pausi",
+            "certificate_hash": "621fdd025f3ebb83869a22484409d033c8b10409"
+          }
+        },
+        {
+          "client_id": "161107915860-qov8ke9vo0tn14uas5badf34hdq69tl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEFu1HAxYhcIMAKTzm_PW-B9sPLmQkNkQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161107915860-qov8ke9vo0tn14uas5badf34hdq69tl9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "161107915860-8epcjr0k62islu1ivde4stk4oqr8bvqp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.Pausi"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

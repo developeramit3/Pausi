@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Sold Price"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/inputfield">
+
+
+         <EditText
+             android:id="@+id/sold_price_edittext"
+             android:layout_centerVertical="true"
+             android:textAlignment="center"
+             android:background="@android:color/transparent"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="number"
+             android:hint="0.00"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sold_price_btn"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

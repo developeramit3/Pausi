@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PropertyDetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/property_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back2" />
+
+            <TextView
+                android:id="@+id/properyty_name_tittle"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/property_detail_back"
+                android:text="Dummy name"
+                android:textColor="@color/colorbtn" />
+
+            <ImageView
+                android:id="@+id/me_frag_camera_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/upload" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="720dp">
+
+                <ImageView
+                    android:id="@+id/slider_imageview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/p1"
+                    android:visibility="gone" />
+
+                <com.t.pausi.Bean.ViewPagerCustomDuration
+
+                    android:id="@+id/vp_viewpager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:visibility="visible" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/ci_indicator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    app:ci_animator="@animator/indicator_animator"
+                    app:ci_animator_reverse="@animator/indicator_animator_reverse"
+                    app:ci_drawable="@drawable/black_radius_square"
+                    app:ci_height="6dp"
+                    app:ci_margin="6dp"
+                    app:ci_width="6dp" />
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Slide up for more details!"
+                        android:textSize="4pt" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/slide_up" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/detail_property_type_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Est. Mortgage: $123"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="6pt" />
+
+                        <TextView
+                            android:id="@+id/detail_price_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="$113"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="7pt"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/detail_sale_type_text"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorAccent"
+                            android:text="FOR SALE"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="5pt" />
+
+                        <TextView
+                            android:id="@+id/detail_address_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Indore, Madhya Pradesh"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorWhite">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:background="#a9adb1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/total_photos_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="3"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="6pt" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="PHOTOS"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="5pt" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rr"
+                android:gravity="bottom"
+                android:visibility="visible">
+
+                <include
+                    layout="@layout/property_detail_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

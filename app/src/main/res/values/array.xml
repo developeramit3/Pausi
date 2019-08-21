@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="country_array">
+        <item>+91</item>
+    </string-array>
+
+    <string-array name="property_type_array">
+        <item>All Property Types</item>
+        <item>Family Homes</item>
+        <item>Apartment</item>
+        <item>Plots and Land</item>
+        <item>Guest House</item>
+        <item>Commercial</item>
+    </string-array>
+
+
+    <string-array name="bads_min_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="bads_max_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6+</item>
+    </string-array>
+
+    <string-array name="baths_min_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="baths_max_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5+</item>
+    </string-array>
+
+    <string-array name="price_min_array">
+        <item>0M</item>
+        <item>5M</item>
+        <item>10M</item>
+        <item>25M</item>
+        <item>100M</item>
+    </string-array>
+
+    <string-array name="price_max_array">
+        <item>5M</item>
+        <item>10M</item>
+        <item>25M</item>
+        <item>100M</item>
+        <item>120M</item>
+        <item>120M+</item>
+    </string-array>
+
+
+    <string-array name="pricerent_min_array">
+        <item>0k</item>
+        <item>10K</item>
+        <item>50K</item>
+        <item>100K</item>
+        <item>1M</item>
+
+    </string-array>
+
+
+    <string-array name="pricerents_max_array">
+        <item>0k</item>
+        <item>10K</item>
+        <item>50K</item>
+        <item>100K</item>
+        <item>1M</item>
+        <item>1M+</item>
+    </string-array>
+
+
+    <string-array name="sale_status_array">
+        <item>FOR SALE</item>
+        <item>OPEN HOUSE</item>
+        <item>CONTRACT</item>
+        <item>SOLD</item>
+    </string-array>
+
+    <string-array name="rent_status_array">
+        <item>FOR RENT</item>
+        <item>OPEN HOUSE</item>
+        <item>PENDING</item>
+        <item>NOT AVAILABLE</item>
+    </string-array>
+
+
+    <string-array name="date_array">
+        <item>Any</item>
+        <item>Today</item>
+        <item>In the past week</item>
+        <item>In the past month</item>
+        <item>In the past 3 months</item>
+        <item>In the past 6 months</item>
+        <item>Over 1 month</item>
+        <item>Over 3 months</item>
+        <item>Over 6 months</item>
+    </string-array>
+
+    <string-array name="sort_array">
+        <item>Price (Low to High)</item>
+        <item>Price (High to Low)</item>
+        <item>A to Z</item>
+        <item>Z to A</item>
+    </string-array>
+
+
+    <string-array name="prop_type_array">
+        <item>Sale</item>
+        <item>Rent</item>
+    </string-array>
+
+    <string-array name="apartment_type_array">
+        <item>Family Homes</item>
+        <item>Apartment</item>
+        <item>Plots and Land</item>
+        <item>Guest House</item>
+        <item>Commercial</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="available_sale_array">
+        <item>FOR SALE</item>
+        <item>OPEN HOUSE</item>
+        <item>CONTRACT</item>
+    </string-array>
+
+    <string-array name="available_rent_array">
+        <item>FOR RENT</item>
+        <item>OPEN HOUSE</item>
+        <item>CONTRACT</item>
+    </string-array>
+
+</resources>
